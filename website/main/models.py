@@ -36,7 +36,6 @@ class Experience(models.Model):
 
 
 class Certification(models.Model):
-    img = models.ImageField(upload_to='certifications')
     name = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
     status = models.CharField(max_length=20, choices=(('Completed', 'Completed'), ('In Progress', 'In Progress')))
@@ -50,7 +49,6 @@ class Certification(models.Model):
 
 
 class Project(models.Model):
-    img = models.ImageField(upload_to='projects')
     name = models.CharField(max_length=100)
     description = models.TextField()
     technologies = models.CharField(max_length=100)
