@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Education(models.Model):
-    level = models.CharField(max_length=100, choices=(('Bachelor', 'BSc'), ('Master', 'MSc'), ('PhD', 'PhD')))
+    level = models.CharField(max_length=100, choices=(('BSc', 'BSc'), ('MSc', 'MSc'), ('PhD', 'PhD')))
     degree = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
     start_year = models.CharField(max_length=4)
