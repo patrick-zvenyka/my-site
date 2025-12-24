@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <style>
+    .person { fill: url(#grad1); }
+  </style>
+  <!-- Simple stylized silhouette -->
+  <circle cx="200" cy="120" r="70" class="person" opacity="0.9" />
+  <path d="M60,450 Q200,180 340,450" fill="none" class="person" stroke="url(#grad1)" stroke-width="0" />
+  <path d="M 80 500 L 80 400 Q 200 200 320 400 L 320 500 Z" class="person" opacity="0.8" />
+</svg>

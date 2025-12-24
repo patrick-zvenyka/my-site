@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Zvenyka | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo text-gradient">Patrick.dev</a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content slide-up">
+            <!-- Image Left -->
+            <div class="hero-image-container fade-in">
+                <img src="{% static 'img/portrait.svg' %}" alt="Patrick Zvenyka" class="hero-img">
+            </div>
+
+            <!-- Text Right -->
+            <div class="hero-text">
+                <div class="hero-subtitle">Welcome to my portfolio</div>
+                <h1 class="hero-title">Building the <br> <span class="text-gradient">Future of Data</span></h1>
+                <p class="hero-description">
+                    Computer Science Graduate exploring the intersection of
+                    <span style="color: var(--primary); font-weight: 600;" class="typing-text">System
+                        Development.</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+
+            <div class="about-grid slide-up">
+                <div class="bio-text">
+                    <p>
+                        I am a driven Computer Science graduate with a deep passion for building scalable systems and
+                        uncovering insights from data.
+                        My academic journey has equipped me with a strong foundation in software engineering,
+                        networking, and algorithms.
+                    </p>
+                    <p>
+                        Currently, I am expanding my expertise by pursuing a <strong>Masters in Big Data
+                            Analytics</strong>,
+                        where I am diving into advanced statistical modeling, machine learning, and big data
+                        technologies.
+                    </p>
+                    <p>
+                        I thrive in environments that challenge me to solve complex problems and value continuous
+                        learning.
+                    </p>
+                </div>
+
+                <div class="education-timeline">
+                    <!-- Masters -->
+                    <div class="education-card">
+                        <h4 class="degree">MSc in Big Data Analytics</h4>
+                        <div class="institution">University Name (Current)</div>
+                        <div class="year">2024 - Present</div>
+                    </div>
+
+                    <!-- Bachelors -->
+                    <div class="education-card">
+                        <h4 class="degree">BSc in Computer Science</h4>
+                        <div class="institution">University Name</div>
+                        <div class="year">Graduated 2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-container slide-up" style="margin-top: 5rem;">
+                <div class="section-header fade-in" style="margin-bottom: 3rem; text-align: center;">
+                    <span class="section-label"
+                        style="display:inline-block; border-bottom: 2px solid var(--accent); padding-bottom: 5px;">Credentials</span>
+                    <h3 class="" style="font-size: 2rem; margin-top: 1rem;">Certifications & Learning</h3>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Completed -->
+                    <div class="cert-card completed">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-details">
+                            <h4>AWS Certified Cloud Practitioner</h4>
+                            <span class="cert-issuer">Amazon Web Services</span>
+                            <span class="status-badge success">Completed</span>
+                        </div>
+                    </div>
+
+                    <!-- Completed -->
+                    <div class="cert-card completed">
+                        <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="cert-details">
+                            <h4>CCNA: Introduction to Networks</h4>
+                            <span class="cert-issuer">Cisco</span>
+                            <span class="status-badge success">Completed</span>
+                        </div>
+                    </div>
+
+                    <!-- In Progress -->
+                    <div class="cert-card progress">
+                        <div class="cert-icon"><i class="fas fa-spinner fa-spin"></i></div>
+                        <div class="cert-details">
+                            <h4>Google Data Analytics Professional Certificate</h4>
+                            <span class="cert-issuer">Google / Coursera</span>
+                            <span class="status-badge warning">In Progress</span>
+                        </div>
+                    </div>
+
+                    <!-- In Progress -->
+                    <div class="cert-card progress">
+                        <div class="cert-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="cert-details">
+                            <h4>Certified Ethical Hacker (CEH)</h4>
+                            <span class="cert-issuer">EC-Council</span>
+                            <span class="status-badge warning">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid slide-up">
+                <!-- Development -->
+                <div class="skill-category">
+                    <div class="category-title">
+                        <i class="fas fa-code" style="color: var(--primary);"></i> Development
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="skill-category">
+                    <div class="category-title">
+                        <i class="fas fa-chart-bar" style="color: var(--secondary);"></i> Data Science
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Big Data</span>
+                    </div>
+                </div>
+
+                <!-- Networking & Tools -->
+                <div class="skill-category">
+                    <div class="category-title">
+                        <i class="fas fa-network-wired" style="color: var(--accent);"></i> Networking & Tools
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Recent Projects</h2>
+            </div>
+
+            <div class="projects-grid slide-up">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- Optional: <img src="..." alt="Project Image" class="project-img"> -->
+                    <div class="project-content">
+                        <h3 class="project-title">Data Analytics Dashboard</h3>
+                        <p class="project-desc">
+                            A real-time dashboard visualizing global market trends.
+                            Built to handle large datasets with optimized queries and interactive charts.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span> <span>D3.js</span> <span>Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                            <a href="#" class="link-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Secure Chat Application</h3>
+                        <p class="project-desc">
+                            End-to-end encrypted messaging platform.
+                            Focused on low-latency communication and robust security protocols using custom socket
+                            programming.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span> <span>Sockets</span> <span>Crypto</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Big Data Pipeline</h3>
+                        <p class="project-desc">
+                            ETL pipeline prototype capable of processing streaming data.
+                            Designed for high throughput and fault tolerance using Apache Kafka.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Kafka</span> <span>Spark</span> <span>Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container fade-in">
+            <div class="contact-container">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Let's Connect</h2>
+                <p class="contact-text">
+                    I'm currently open to opportunities in Software Engineering and Data Analytics.
+                    Feel free to reach out!
+                </p>
+                <a href="mailto:patrick@example.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Patrick Zvenyka. Designed & Built with Django.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
