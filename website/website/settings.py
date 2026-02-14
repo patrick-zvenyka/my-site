@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)j70g7)^byd$jmirqk@_jqo3(eyg%w13u=k66j2xei6!5!ewdm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'main',
+    'errorhandlers',
 ]
 
 MIDDLEWARE = [
@@ -115,7 +116,7 @@ if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
 
 else: 
-    STATIC_ROOT = BASE_DIR / 'static'
+    STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 

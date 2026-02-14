@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Error{% endblock %} | Patrick Zvenyika</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.1) 0%, var(--bg-main) 70%);
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-container {
+            max-width: 600px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-container">
+            <div class="error-icon">
+                {% block icon %}<i class="fas fa-exclamation-triangle"></i>{% endblock %}
+            </div>
+            <h1 class="error-code text-gradient">{% block code %}Error{% endblock %}</h1>
+            <p class="error-message">{% block description %}Something went wrong.{% endblock %}</p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
